@@ -9,5 +9,5 @@ pip install --upgrade pip wheel \
 pip install -r requirements.txt \
 pip install --upgrade ipykernel \
 python -m ipykernel install --user --name MyEnv --display-name "TDA Env" \
-deactivate && exit \
+deactivate && exit
 3) Now you have the virtual environment installed. Activate it again with source .venv/bin/activate. You also have it as an avaliable kernel if you are running a Jupyter notebook.
