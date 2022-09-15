@@ -1,0 +1,38 @@
+{"queryObj":{
+  "query": [
+    {
+      "code": "Sysselsattning",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "FÖRV",
+          "EJFÖRV",
+          "total"
+        ]
+      }
+    },
+    {
+      "code": "Kon",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "1",
+          "2",
+          "1+2"
+        ]
+      }
+    },
+    {
+      "code": "Tid",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "2020"
+        ]
+      }
+    }
+  ],
+  "response": {
+    "format": "px"
+  }
+},"tableIdForQuery":"BefDeSoSyssN"}

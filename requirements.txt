@@ -1,0 +1,14 @@
+geopandas
+pyodbc
+shapely
+pandas
+numpy
+sklearn
+datetime
+pyscbwrapper
+nbformat
+pygeos
+folium
+matplotlib
+geopy
+mapclassify
