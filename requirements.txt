@@ -12,3 +12,4 @@ folium
 matplotlib
 geopy
 mapclassify
+openpyxl
