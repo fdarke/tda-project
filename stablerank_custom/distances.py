@@ -15,7 +15,7 @@ import numpy as np
 
 import matplotlib.pyplot as plt
 
-from scipy.cluster.hierarchy import linkage, fcluster
+from scipy.cluster.hierarchy import linkage, fcluster, fclusterdata
 import scipy.spatial as spatial
 from ripser import ripser
 
@@ -23,6 +23,7 @@ from stablerank_custom.rtorf import Pcf
 from stablerank_custom.rtorf import Pcnif
 from stablerank_custom.rtorf import zero_pcnif
 from stablerank_custom.rtorf import one_pcnif
+
 
 from stablerank_custom.barcodes import BC
 from stablerank_custom.barcodes import Contour
@@ -39,9 +40,8 @@ nan = np.nan
 
 
 class Distance(object):
-    def __init__(self, content, content_demography):
+    def __init__(self, content):
         self.content = content
-        self.content_demography = content_demography
 
     def size(self):
         if isinstance(self.content, str):
@@ -64,6 +64,7 @@ class Distance(object):
         if isinstance(self.content, str) and self.content == "empty":
             return zero_pcnif()
         if sample is None:
+            # here we are
             return _d_to_h0sr(self.content, clustering_method, contour, w_p, w_q, reduced)
         if isinstance(sample, Sample):
             return self._get_h0sr_single(sample, clustering_method, contour, w_p, w_q, reduced)

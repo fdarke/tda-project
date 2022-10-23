@@ -17,7 +17,7 @@ from stablerank_custom.rtorf import  one_pcnif
 
 
 from stablerank_custom.distances import link_to_sr
-from stablerank_custom.distances import Distance
+from stablerank_custom.distances import Distance, _d_to_h0sr, _d_to_bc, _linkage_to_stable_rank, link_to_sr
 from stablerank_custom.distances  import bc_to_sr
 
 from stablerank_custom.barcodes import BC
